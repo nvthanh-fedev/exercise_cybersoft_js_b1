@@ -13,7 +13,7 @@
   <article class="l-design-widht">
 
 
-    <!-- start card-title -->
+    <!-- start exercises-title -->
     <div class="card card--inverted" id="card-title">
       <h2 style="margin: 0px; display: inline-block;">
         <svg class="icon" aria-hidden="true">
@@ -25,9 +25,9 @@
         Cybersoft Academy
       </h2>
     </div>
-    <!-- end card-title -->
+    <!-- end exercises-title -->
 
-    <!-- start card 1 Calculate employee salary-->
+    <!-- start exercises 1 Calculate employee salary-->
     <div class="card card--accent" id="card-1">
       <h2>
         <svg class="icon" aria-hidden="true">
@@ -35,44 +35,45 @@
         </svg>Exercise 1 - Calculate employee salary
       </h2>
       <label class="input">
-        <input class="input__field" type="text" placeholder=" " />
-        <span class="input__label">Number of working days</span>
+        <h4>Enter Number Of Working Days & Salary For 1 Hour Of Work</h4>
+        <input id="numberOfWorkingDays" class="input__field" type="text" placeholder="Number of working days is" />
+        <input id="oneHourSalaryIs" class="input__field" type="text" placeholder="Salary for 1 hour of work is" />
       </label>
       <div class="button-group">
-        <button>Calculation of wages</button>
+        <button onclick="calculateEmployeeSalary()">Calculation of wages </button>
       </div>
-      <label class="input">
-        <input class="input__field" type="text" placeholder="Employee's salary is" disabled=”disabled” />
-      </label>
+      <div class="answer">
+        <span id="employeeSalary">Employee's salary is </span>
+      </div>
     </div>
-    <!-- end card 1 Calculate employee salary-->
+    <!-- end exercises 1 Calculate employee salary-->
 
 
-    <!-- start card 2 Calculate the mean-->
+    <!-- start exercises 2 Calculate the mean-->
     <div class="card card" id="card-2">
       <h2>
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-coffee" href="#icon-coffee" />
-        </svg>Exercise 2 - Calculate the mean
+        </svg>Exercise 2 - Calculate the mean of 5 num
       </h2>
       <label class="input">
         <h4>Enter 5 number</h4>
-        <input class="input__field" type="text" placeholder="1st Number" />
-        <input class="input__field" type="text" placeholder="2nd Number" />
-        <input class="input__field" type="text" placeholder="3th Number" />
-        <input class="input__field" type="text" placeholder="4th Number" />
-        <input class="input__field" type="text" placeholder="5th Number" />
+        <input id="firstValue" class="input__field" type="text" placeholder="1st Number" />
+        <input id="secondValue" class="input__field" type="text" placeholder="2nd Number" />
+        <input id="thirdValue" class="input__field" type="text" placeholder="3th Number" />
+        <input id="fourthValue" class="input__field" type="text" placeholder="4th Number" />
+        <input id="fifthValue" class="input__field" type="text" placeholder="5th Number" />
       </label>
       <div class="button-group">
-        <button>Calculate the mean</button>
+        <button onclick="calculateTheMean()">Calculate the mean</button>
       </div>
-      <label class="input">
-        <input class="input__field" type="text" placeholder=" " value="The average value is" disabled=”disabled” />
-      </label>
+      <div class="answer">
+        <span id="theMean">The mean of 5 numbers is</span>
+      </div>
     </div>
-    <!-- end card 2 Calculate the mean-->
+    <!-- end exercises 2 Calculate the mean-->
 
-    <!-- start card 3 Convert USD to VND -->
+    <!-- start exercises 3 Convert USD to VND -->
     <div class="card card--inverted" id="card-3">
       <h2>
         <svg class="icon" aria-hidden="true">
@@ -80,22 +81,19 @@
         </svg>Exercise 3 - Convert USD to VND
       </h2>
       <label class="input">
-        <input class="input__field" type="text" placeholder=" " />
-        <span class="input__label">USD</span>
+        <h4>Enter dollar amount </h4>
+        <input id="dollarAmount" class="input__field" type="text" placeholder="Enter Dollar" />
       </label>
-
       <div class="button-group">
-        <button>Currency conversion</button>
+        <button onclick="currencyConversionFromUSDToVND()">Currency conversion</button>
       </div>
-
-      <label class="input">
-        <input class="input__field" type="text" placeholder=" " />
-        <span class="input__label">VND</span>
-      </label>
+      <div class="answer">
+        <span id="vietnameseDong">0 VND</span>
+      </div>
     </div>
-    <!-- end card 3 Convert USD to VND -->
+    <!-- end exercises 3 Convert USD to VND -->
 
-    <!-- start card 4 Calculate the perimeter and area of ​​the rectangle -->
+    <!-- start exercises 4 Calculate the perimeter and area of ​​the rectangle -->
     <div class="card" id="card-4">
       <h2>
         <svg class="icon" aria-hidden="true">
@@ -103,45 +101,39 @@
         </svg>Exercise 4 - Calculate the perimeter and area of ​​the rectangle
       </h2>
       <label class="input">
-        <h4>Enter 5 number</h4>
-        <input class="input__field" type="text" placeholder="1st Number" />
-        <input class="input__field" type="text" placeholder="2nd Number" />
+        <h4>Enter 2 edge</h4>
+        <input id="firstEdge" class="input__field" type="text" placeholder="The length of the first edge is" />
+        <input id="secondEdge" class="input__field" type="text" placeholder="The length of the second edge is" />
       </label>
       <div class="button-group">
-        <button>Calculate the mean</button>
+        <button onclick="calculateThePerimeterAndTheArea()">Calculate The Perimeter And Area Of ​The Rectangle</button>
       </div>
-      <label class="input">
-        <input class="input__field" type="text" placeholder=" " value="Perimeter of a rectangle is"
-          disabled=”disabled” />
-        <input class="input__field" type="text" placeholder=" " value="The area of ​​the rectangle is"
-          disabled=”disabled” />
-      </label>
+      <div class="answer">
+        <span id="thePerimeter">The Perimeter of a rectangle is</span>
+        <span id="theArea">The Area of a rectangle is </span>
+      </div>
     </div>
-    <!-- end card 4 Calculate the perimeter and area of ​​the rectangle -->
+    <!-- end exercises 4 Calculate the perimeter and area of ​​the rectangle -->
 
-     <!-- start card 4 Calculate the perimeter and area of ​​the rectangle -->
+    <!-- start exercises 5 Calculate the sum of there digits -->
     <div class="card card--accent" id="card-5" style="margin-bottom: 1000px;">
       <h2>
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-coffee" href="#icon-coffee" />
-        </svg>Exercise 5 - Sum of two digits
+        </svg>Exercise 5 - Calculate the sum of there digits
       </h2>
       <label class="input">
-        <input class="input__field" type="text" placeholder=" " value="Valuable value" />
-        <span class="input__label">Some Fancy Label</span>
+        <h4>Enter a three-digit integer</h4>
+        <input id="threeDigitInteger" class="input__field" type="text" placeholder="Enter a three-digit integer" />
       </label>
-
       <div class="button-group">
-        <button>Send</button>
+        <button onclick="sumOfThereDigits()">Currency conversion</button>
       </div>
-
-      <label class="input">
-        <input class="input__field" type="text" placeholder=" " value=" Sum of two digits is" disabled=”disabled” />
-      </label>
+      <div class="answer">
+        <span id="sumOfThereDigits">The sum of three digit integer is</span>
+      </div>
     </div>
-
-
-
+    <!-- end exercises 5 Calculate the sum of there digits -->
   </article>
 
   <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
