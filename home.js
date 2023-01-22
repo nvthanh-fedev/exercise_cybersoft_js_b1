@@ -147,7 +147,7 @@ function sumOfThereDigits() {
 
   // process:
   if (isNaN(threeDigitInteger)) {
-    document.getElementById("threeDigitInteger").innerHTML =
+    document.getElementById("sumOfThereDigits").innerHTML =
       "Please enter Numeric value";
     return false;
   } else {
@@ -166,7 +166,7 @@ function sumOfThereDigits() {
       return true;
     } else {
       document.getElementById("sumOfThereDigits").innerHTML =
-        "Please enter threeDigitInteger <= 999 and >=0";
+        "Please enter three digit integer <= 999 and >=0";
       return false;
     }
   }
